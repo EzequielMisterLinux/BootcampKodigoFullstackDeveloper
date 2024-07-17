@@ -1,6 +1,6 @@
 /* Section Restaurant */
 .section-restaurant {
-    background-image: url(https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/image1_jcpygh.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/image1_jcpygh.jpg);
     width: 100%;
     height: 30rem;
     background-size: cover;
@@ -8,8 +8,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
     flex-flow: column nowrap;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
+
 
 .title-restaurant {
     color: var(--blanco);
