@@ -1,0 +1,52 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --color-primario: #ff7b00;
+    --color-secundario: #a26e3e;
+    --blanco: #FFF;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Container */
+.header-container {
+    background-color: var(--blanco);
+    padding: 0.7rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation List */
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+/* Navigation Link */
+.nav-link {
+    text-decoration: none;
+    color: var(--color-primario);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-secundario);
+}
+

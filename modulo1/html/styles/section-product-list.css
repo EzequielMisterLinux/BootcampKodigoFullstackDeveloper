@@ -1,0 +1,128 @@
+/* Product Section */
+.product-container {
+    background-image: url(https://res.cloudinary.com/dmddi5ncx/image/upload/v1720574753/practicas/hamburguesa/image3_ulstmf.jpg);
+    width: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+.product-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title-product, .content-text-product, .btn-product {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.title-product {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-text-product {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn-product {
+    background-color: var(--color-primario);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.btn-product:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Menu Section */
+.container-menu {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#burger-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.burger-item {
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.burger-item:hover {
+    transform: scale(1.05);
+}
+
+.burger-item h3, .burger-item p, .burger-item button {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.burger-item:hover h3, .burger-item:hover p, .burger-item:hover button {
+    opacity: 1;
+}
+
+.burger-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.burger-item p {
+    font-size: 1rem;
+}
+
+.burger-item button {
+    background-color: var(--color-primario);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.burger-item button:hover {
+    background-color: var(--color-secundario);
+}
+

@@ -1,0 +1,53 @@
+/* Section About */
+.box {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.every {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.is {
+    font-size: 1rem;
+    color: #444;
+    font-weight: 400;
+}
+
+.is span {
+    color: var(--color-primario);
+}
+
+.about-content-p {
+    line-height: 1.6rem;
+    color: #666;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    flex: 0 0 400px;
+    max-width: 100%;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 10px #a26e3e;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.about-img img:hover {
+    transform: scale(1.1);
+}
+
