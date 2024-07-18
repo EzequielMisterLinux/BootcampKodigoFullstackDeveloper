@@ -1,0 +1,84 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.blog-posts h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+.post {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.post:last-of-type {
+    border: none;
+}
+
+.post h3 {
+    font-family: var(--font-heading);
+    margin: 1rem 0;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.courses-sidebar h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+.course {
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.course:last-of-type {
+    border: none;
+}
+
+.course h3 {
+    font-family: var(--font-heading);
+    margin: 1rem 0;
+}
+
+.course-info {
+    font-weight: 700;
+}
+
+.course-info span {
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-family: var(--font-heading);
+    color: var(--white);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5e3d31;
+}
+
+.btn-secondary {
+    background-color: var(--dark-color);
+}
+
+.btn-secondary:hover {
+    background-color: #383838;
+}

@@ -1,0 +1,81 @@
+.table-container {
+    margin: 8%;
+    display: block;
+    justify-content: center;
+}
+
+.desktop-table {    
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.desktop-table th, .desktop-table td {
+    padding: 10px ;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.desktop-table th {
+    background-color: #784D3C;
+    color: white;
+    font-weight: bold;
+}
+
+.desktop-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.curso-imagen {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.mobile-list {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.curso-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-item .curso-imagen {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.curso-info h3 {
+    margin-top: 0;
+    color: #784D3C;
+}
+
+.curso-info p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .desktop-table {
+        display: none;
+    }
+
+    .mobile-list {
+        display: block;
+        display: grid;
+    }
+    .curso-item .curso-imagen {
+        
+        height: 400px;
+    }
+}
