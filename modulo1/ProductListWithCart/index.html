@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Active link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled link</a>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    Cart (<span id="cartCount">0</span>)
+                </button>
+            </li>
+        </ul>
+    </header>
+    <main class="container row">
+        <section class="col-md-8">
+            <h1 class="pt-5">Desserts</h1>
+            <section class="row">
+                <div class="col-md-4">
+                    <img src="./images/image-waffle-desktop.jpg" alt="Waffle" class="img-fluid">
+                    <div class="position-relative mt-3">
+                        <button class="add-to-cart rounded-4 p-2 border border-secondary position-absolute bottom-100 start-50 translate-middle-x w-75" data-name="Waffle" data-price="6.50" data-image="./images/image-waffle-desktop.jpg" data-description="Delicious Waffle"><i class="bi bi-cart-plus"></i> add to cart</button>
+                        <p class="text-muted mb-0">Waffle</p>
+                        <p class="fw-bold mb-0 text-black">Waffle</p>
+                        <p class="text-danger fw-bold mb-0">$6.50</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/image-creme-brulee-desktop.jpg" alt="Creme Brulee" class="img-fluid">
+                    <div class="position-relative mt-3">
+                        <button class="add-to-cart rounded-4 p-2 border border-secondary position-absolute bottom-100 start-50 translate-middle-x w-75" data-name="Creme Brulee" data-price="7.00" data-image="./images/image-creme-brulee-desktop.jpg" data-description="Vanilla Bean Creme Brulee"><i class="bi bi-cart-plus"></i> add to cart</button>
+                        <p class="text-muted mb-0">Creme Brulee</p>
+                        <p class="fw-bold mb-0 text-black">Vanilla Bean Creme Brulee</p>
+                        <p class="text-danger fw-bold mb-0">$7.00</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/image-macaron-desktop.jpg" alt="Macaron" class="img-fluid">
+                    <div class="position-relative mt-3">
+                        <button class="add-to-cart rounded-4 p-2 border border-secondary position-absolute bottom-100 start-50 translate-middle-x w-75" data-name="Macaron" data-price="8.00" data-image="./images/image-macaron-desktop.jpg" data-description="Macaron Mix of Five"><i class="bi bi-cart-plus"></i> add to cart</button>
+                        <p class="text-muted mb-0">Macaron</p>
+                        <p class="fw-bold mb-0 text-black">Macaron Mix of Five</p>
+                        <p class="text-danger fw-bold mb-0">$8.00</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/image-tiramisu-desktop.jpg" alt="Tiramisu" class="img-fluid">
+                    <div class="position-relative mt-3">
+                        <button class="add-to-cart rounded-4 p-2 border border-secondary position-absolute bottom-100 start-50 translate-middle-x w-75" data-name="Tiramisu" data-price="5.50" data-image="./images/image-tiramisu-desktop.jpg" data-description="Classic Tiramisu"><i class="bi bi-cart-plus"></i> add to cart</button>
+                        <p class="text-muted mb-0">Tiramisu</p>
+                        <p class="fw-bold mb-0 text-black">Classic Tiramisu</p>
+                        <p class="text-danger fw-bold mb-0">$5.50</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/image-baklava-desktop.jpg" alt="Baklava" class="img-fluid">
+                    <div class="position-relative mt-3">
+                        <button class="add-to-cart rounded-4 p-2 border border-secondary position-absolute bottom-100 start-50 translate-middle-x w-75" data-name="Baklava" data-price="4.00" data-image="./images/image-baklava-desktop.jpg" data-description="Pistachio Baklava"><i class="bi bi-cart-plus"></i> add to cart</button>
+                        <p class="text-muted mb-0">Baklava</p>
+                        <p class="fw-bold mb-0 text-black">Pistachio Baklava</p>
+                        <p class="text-danger fw-bold mb-0">$4.00</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/image-meringue-desktop.jpg" alt="Meringue" class="img-fluid">
+                    <div class="position-relative mt-3">
+                        <button class="add-to-cart rounded-4 p-2 border border-secondary position-absolute bottom-100 start-50 translate-middle-x w-75" data-name="Meringue" data-price="5.00" data-image="./images/image-meringue-desktop.jpg" data-description="Lemon Meringue Pie"><i class="bi bi-cart-plus"></i> add to cart</button>
+                        <p class="text-muted mb-0">Pie</p>
+                        <p class="fw-bold mb-0 text-black">Lemon Meringue Pie</p>
+                        <p class="text-danger fw-bold mb-0">$5.00</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="col-md-4 col-xs-12">
+            <h2 class="pt-5">Your Cart (0)</h2>
+            <!--Cart section-->
+        <section class="col-md-4 col-xs-12">
+            <section class="pt-5">
+                    <div class="card border-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title text-warning">Your Cart (0)</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="row border-0">
+                            <div class="col-12 col-md-10 border-0">
+                                <li class="list-group-item border-0">
+                                    <p class="fw-bold">Classic Tiramisu</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <span class="badge bg-body text-danger rounded-pill">1x</span>
+                                            </div>
+                                            <div class="col-sm text-black-50">
+                                                $5.50
+                                            </div>
+                                            <div class="col-sm text-black">
+                                                $5.50
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-lg-2 col-1">
+                                <i class="bi bi-x-circle"></i>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="list-group list-group-flush">
+                        <div class="row">
+                            <div class="col-12 col-md-10">
+                                <li class="list-group-item border-0">
+                                    <p class="fw-bold">Vanilla Bean Creme Bruele</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <span class="badge bg-body text-danger rounded-pill">4x</span>
+                                            </div>
+                                            <div class="col-sm text-black-50">
+                                                $7.00
+                                            </div>
+                                            <div class="col-sm text-black">
+                                                $28.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-lg-2 col-1">
+                                <i class="bi bi-x-circle"></i>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="list-group list-group-flush">
+                        <div class="row">
+                            <div class="col-12 col-md-10">
+                                <li class="list-group-item border-0">
+                                    <p class="fw-bold">Vanilla Panna Cotta</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <span class="badge bg-body text-danger rounded-pill">2x</span>
+                                            </div>
+                                            <div class="col-sm text-black-50">
+                                                $6.50
+                                            </div>
+                                            <div class="col-sm text-black">
+                                                $13.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-lg-2 col-1">
+                                <i class="bi bi-x-circle"></i>
+                            </div>
+                        </div>
+                    </ul>
+                    <section class="text-center">
+                        <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col">
+                            <p class="text-black">Order total</p>
+                            </div>
+                            <div class="col">
+                            <p class="fw-bold text-right 15rem w-100">$46.50</p>
+                            </div>
+                        </div>
+                        <button class="rounded-5  p-3 btn btn-danger">Confirm Order</button>
+                    </div>
+                </div></section>
+                    
+            </section>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <nav class="nav justify-content-center">
+            <a class="nav-link active" href="#" aria-current="page">Active link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled link</a>
+        </nav>
+    </footer>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Order Confirmed</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartItems" class="list-group"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn">Start new order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
+        <div id="notificationToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="notificationBody"></div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
