@@ -3,8 +3,8 @@ export const Header = () => {
   header.innerHTML = `
     <nav class="navigator-container">
       <p class="name-page">Omelette Recipe</p>
-      <div id="hamburger-icon">
-        <i class="fas fa-bars"></i>
+      <div id="hamburger-icon" class="material-icons">
+        menu
       </div>
       <ul id="list-container">
         <li class="list-element">Home</li>
@@ -13,8 +13,8 @@ export const Header = () => {
       </ul>
     </nav>
     <div id="modal-menu">
-      <div id="close-icon">
-        <i class="fas fa-times"></i>
+      <div id="close-icon" class="material-icons">
+        close
       </div>
       <ul id="modal-list-container">
         <li class="list-element">Home</li>
