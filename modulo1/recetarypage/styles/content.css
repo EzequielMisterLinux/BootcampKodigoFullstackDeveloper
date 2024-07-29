@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+}
+
+.section-image {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #e9ecef; 
+}
+
+.section-image h1 {
+    font-weight: 500;
+    color: #343a40; 
+}
+
+.image-first {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url('../images/image.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: 100%; 
+    height: 500px; 
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.section-recipe {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px;
+}
+
+.section-recipe h2 {
+    font-weight: bold;
+    color: #495057; 
+}
+
+.content-card {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-wrap: wrap; 
+}
+
+.content-card li {
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.content-card li:hover {
+    background-color: #e2e6ea; 
+    transform: scale(1.02); 
+}
+
+.card {
+    background-color: #fef0f6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin: 20px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    background-color: #fce4ec; 
+    transform: scale(1.02); 
+}
+
+.justify-line {
+    font-weight: bold;
+}
+
+.subtext {
+    color: #6c757d; 
+    font-size: smaller;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #495057; 
+}
+
+p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .content-card {
+        flex-direction: column;
+    }
+    
+    .content-card li {
+        margin: 10px 0;
+    }
+}
