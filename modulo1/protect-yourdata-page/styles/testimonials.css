@@ -1,0 +1,21 @@
+/* Testimonials Section */
+.testimonials {
+    background-color: #181F2B;
+}
+
+.testimonials .testimonial {
+    border-radius: 10px;
+    background-color: rgb(33, 41, 60);
+    padding: 20px;
+}
+
+.testimonials p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.testimonials img {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "fylo-dark-theme-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3",
+    "normalize.css": "^8.0.1"
+  }
+}

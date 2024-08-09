@@ -1,0 +1,52 @@
+/* Footer Section */
+footer {
+    background-color: rgb(12, 21, 36);
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00c1c7;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.color-section-features {
+    background-color: #181F2B;
+}
+
+/* Tamaño de la imagen para pantallas medianas y grandes */
+.img-md-size {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .img-md-size {
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import './header.css';
+@import './heroSection.css';
+@import './featuresSection.css';
+@import './testimonials.css';
+@import './signup.css';
+@import './footer.css';

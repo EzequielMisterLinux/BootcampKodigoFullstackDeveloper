@@ -1,0 +1,34 @@
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/bg-curvy-desktop.svg'); 
+    background-size: cover;
+    background-position: center ;
+
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero button {
+    border: none;
+    border-radius: 18px;
+    background-color: #4EC3D4;
+    &:hover{
+        background-color: #07697a;
+    }
+}
