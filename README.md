@@ -8,4 +8,4 @@
 
 [🧾 Recetary Ingredients Project](https://recetarykodeat.netlify.app/)
 
-[Protect your data Project](https://protec-your-data.netlify.app/)
+[Protect your data Project](https://protect-your-data.netlify.app/)
