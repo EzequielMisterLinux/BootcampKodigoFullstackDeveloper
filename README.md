@@ -9,3 +9,5 @@
 [🧾 Recetary Ingredients Project](https://recetarykodeat.netlify.app/)
 
 [Protect your data Project](https://protect-your-data.netlify.app/)
+
+[Cooking course Kodigo vanilla vite js](https://cooking-courses-kodigo.netlify.app/)
