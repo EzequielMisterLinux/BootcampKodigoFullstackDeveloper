@@ -1,4 +1,5 @@
-import './style.css'
-import Content from './src/components/elements/elements'
+import { initContent } from './src/components/Content';
 
-document.querySelector('#app').textContent = Content()
+document.addEventListener('DOMContentLoaded', () => {
+  initContent();
+});
