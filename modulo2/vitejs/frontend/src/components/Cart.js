@@ -40,17 +40,31 @@ export const removeFromCart = (id) => {
   });
 };
 
+
 export const clearCart = () => {
-  localStorage.removeItem('cart');
-  renderCart();
-  Swal.fire({
-    icon: 'success',
-    title: 'Carrito vaciado',
-    text: 'Se han eliminado todos los cursos del carrito',
-    timer: 2000,
-    showConfirmButton: false
-  });
+  const cart = getCart();
+  if (cart.length === 0) {
+    Swal.fire({
+      icon: 'info',
+      title: 'Carrito',
+      text: 'No hay cursos en el carrito',
+      timer: 2000,
+      showConfirmButton: false
+    });
+  } else {
+    localStorage.removeItem('cart');
+    renderCart();
+    Swal.fire({
+      icon: 'success',
+      title: 'Carrito vaciado',
+      text: 'Se han eliminado todos los cursos del carrito',
+      timer: 2000,
+      showConfirmButton: false
+    });
+  }
 };
+
+
 
 export const renderCart = () => {
   const cart = getCart();
