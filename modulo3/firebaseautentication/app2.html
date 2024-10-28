@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript: Variables y Funciones</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px;">
+    <h1 style="color: #2c3e50; text-align: center; border-bottom: 2px solid #f39c12; padding-bottom: 10px;">Introducción a JavaScript: Variables y Funciones</h1>
+    
+    <div id="jsSlider" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; margin-top: 20px;">
+        <div class="slide" style="display: none; padding: 20px;">
+            <h2 style="color: #e67e22;">Variables en JavaScript</h2>
+            <p>Las variables son contenedores para almacenar datos en JavaScript.</p>
+            <h3 style="color: #16a085;">Declaración de variables:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><strong>var:</strong> Declaración de variable con ámbito de función (obsoleto en código moderno)</li>
+                <li><strong>let:</strong> Declaración de variable con ámbito de bloque (recomendado)</li>
+                <li><strong>const:</strong> Declaración de constante con ámbito de bloque</li>
+            </ul>
+            <h3 style="color: #16a085;">Ejemplos:</h3>
+            <pre style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; overflow-x: auto;">
+// Usando let
+let nombre = "Juan";
+let edad = 25;
+let esEstudiante = true;
+
+// Usando const para valores que no cambiarán
+const PI = 3.14159;
+const DIAS_SEMANA = 7;
+
+// Reasignación (solo posible con let)
+nombre = "María";
+edad = 26;
+
+console.log(nombre); // Salida: María
+console.log(edad);   // Salida: 26
+            </pre>
+            <p>Recuerda: usa <code>const</code> por defecto y <code>let</code> cuando necesites reasignar valores.</p>
+        </div>
+        
+        <div class="slide" style="display: none; padding: 20px;">
+            <h2 style="color: #e67e22;">Tipos de Datos en JavaScript</h2>
+            <p>JavaScript es un lenguaje de tipado dinámico, lo que significa que las variables pueden contener diferentes tipos de datos.</p>
+            <h3 style="color: #16a085;">Tipos de datos primitivos:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><strong>String:</strong> Cadenas de texto</li>
+                <li><strong>Number:</strong> Números (enteros y decimales)</li>
+                <li><strong>Boolean:</strong> true o false</li>
+                <li><strong>Undefined:</strong> Variable declarada pero sin valor asignado</li>
+                <li><strong>Null:</strong> Valor nulo (ausencia intencional de cualquier valor)</li>
+                <li><strong>Symbol:</strong> Identificador único (ES6+)</li>
+            </ul>
+            <h3 style="color: #16a085;">Ejemplos:</h3>
+            <pre style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; overflow-x: auto;">
+let nombre = "Ana";         // String
+let edad = 30;              // Number
+let altura = 1.75;          // Number (decimal)
+let esEstudiante = false;   // Boolean
+let direccion;              // Undefined
+let valorNulo = null;       // Null
+
+console.log(typeof nombre);        // Salida: string
+console.log(typeof edad);          // Salida: number
+console.log(typeof esEstudiante);  // Salida: boolean
+console.log(typeof direccion);     // Salida: undefined
+console.log(typeof valorNulo);     // Salida: object (esto es un error conocido en JS)
+            </pre>
+            <p>El operador <code>typeof</code> se usa para determinar el tipo de una variable.</p>
+        </div>
+        
+        <div class="slide" style="display: none; padding: 20px;">
+            <h2 style="color: #e67e22;">Operadores en JavaScript</h2>
+            <p>Los operadores permiten realizar operaciones en variables y valores.</p>
+            <h3 style="color: #16a085;">Tipos de operadores:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><strong>Aritméticos:</strong> +, -, *, /, %, **</li>
+                <li><strong>Asignación:</strong> =, +=, -=, *=, /=</li>
+                <li><strong>Comparación:</strong> ==, ===, !=, !==, &gt;, &lt;, &gt;=, &lt;=</li>
+                <li><strong>Lógicos:</strong> &&, ||, !</li>
+            </ul>
+            <h3 style="color: #16a085;">Ejemplos:</h3>
+            <pre style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; overflow-x: auto;">
+// Operadores aritméticos
+let suma = 5 + 3;       // 8
+let potencia = 2 ** 3;  // 8 (2 elevado a 3)
+
+// Operadores de asignación
+let x = 10;
+x += 5;  // Equivale a: x = x + 5;
+
+// Operadores de comparación
+console.log(5 == "5");   // true (compara solo valor)
+console.log(5 === "5");  // false (compara valor y tipo)
+
+// Operadores lógicos
+let a = true, b = false;
+console.log(a && b);  // false
+console.log(a || b);  // true
+console.log(!a);      // false
+            </pre>
+            <p>Los operadores son fundamentales para realizar cálculos y tomar decisiones en tu código.</p>
+        </div>
+        
+        <div class="slide" style="display: none; padding: 20px;">
+            <h2 style="color: #e67e22;">Funciones en JavaScript</h2>
+            <p>Las funciones son bloques de código reutilizables que realizan una tarea específica.</p>
+            <h3 style="color: #16a085;">Declaración de funciones:</h3>
+            <pre style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; overflow-x: auto;">
+// Función declarativa
+function saludar(nombre) {
+    return `Hola, ${nombre}!`;
+}
+
+// Función expresiva
+const despedir = function(nombre) {
+    return `Adiós, ${nombre}!`;
+};
+
+// Función flecha (arrow function)
+const multiplicar = (a, b) => a * b;
+            </pre>
+            <h3 style="color: #16a085;">Uso de funciones:</h3>
+            <pre style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; overflow-x: auto;">
+console.log(saludar("María"));     // Salida: Hola, María!
+console.log(despedir("Juan"));     // Salida: Adiós, Juan!
+console.log(multiplicar(4, 5));    // Salida: 20
+            </pre>
+            <h3 style="color: #16a85;">Parámetros y retorno:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Los parámetros son valores que la función recibe</li>
+                <li>El retorno es el valor que la función devuelve (usando <code>return</code>)</li>
+                <li>Si no se especifica un retorno, la función devuelve <code>undefined</code></li>
+            </ul>
+            <p>Las funciones son esenciales para organizar y reutilizar código en JavaScript.</p>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 10px;">
+        <button onclick="changeSlide(-1)" style="background-color: #f39c12; color: white; border: none; padding: 10px 20px; margin: 0 5px; cursor: pointer; border-radius: 5px;">Anterior</button>
+        <button onclick="changeSlide(1)" style="background-color: #f39c12; color: white; border: none; padding: 10px 20px; margin: 0 5px; cursor: pointer; border-radius: 5px;">Siguiente</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll("#jsSlider .slide");
+
+        function showSlide(n) {
+            slides[currentSlide].style.display = "none";
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].style.display = "block";
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+        showSlide(0);
+    </script>
+</body>
+</html>
